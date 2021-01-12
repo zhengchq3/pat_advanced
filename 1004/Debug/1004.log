@@ -1,0 +1,4 @@
+﻿  1004.cpp
+C:\pat_advanced\1004\1004.cpp(15,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1004\1004.cpp(24,20): warning C4018: “<”: 有符号/无符号不匹配
+  1004.vcxproj -> C:\pat_advanced\1004\Debug\1004.exe

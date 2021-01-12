@@ -1,0 +1,9 @@
+1001
+计算a+b,输出标准形式的和。
+数字必须被三个三个用逗号分隔开
+calculate
+format
+digit
+comma
+integer
+space
