@@ -2,49 +2,54 @@
 using namespace std;
 
 #include <vector>
-#include <algorithm>
-#include <sstream>
+#include <map>
 
-string eng[10] = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
 int main()
 {
-	string num;
-	cin >> num;
-	
-	int sum = 0;
-	for (int i = 0; i < num.length(); i++)
+	int n, m;
+	cin >> n >> m;
+	map<int, vector<int>> hash1;
+	for (int i = 0; i < m; i++)
 	{
-		sum += num[i] - '0';
+		int id, k;
+		cin >> id >> k;
+		vector<int> temp(k);
+		for (int j = 0; j < k; j++)
+		{
+			cin >> temp[j];
+		}
+		hash1[id] = temp;
 	}
-	stringstream ss;
-	string res;
-	ss << sum;
-	ss >> res;
-	cout << eng[res[0] - '0'];
-	for (int i = 1; i < res.size(); i++)
+
+	vector<int> itr;
+	itr.push_back(1);
+	vector<int> res;
+	while (itr.size() != 0)
 	{
-		cout<<" "<< eng[res[i] - '0'];
+		int count = 0;
+		vector<int> temp;
+		for (int i = 0; i < itr.size(); i++)
+		{
+			if (hash1.find(itr[i])==hash1.end())//(hash1.count(itr[i]) == 0)//用find会大大减少时间
+			{
+				count++;
+			}
+			else
+			{
+				for (int j = 0; j < hash1[itr[i]].size(); j++)
+				{
+					temp.push_back(hash1[itr[i]][j]);
+				}
+			}
+		}
+		itr = temp;
+		res.push_back(count);
 	}
-	/*if (sum == 0)
-	{
-		cout << "zero";
-		return 0;
-	}
-	vector<string> res;
-	while (sum != 0)
-	{
-		res.push_back(eng[sum % 10]);
-		sum /= 10;
-	}
-	reverse(res.begin(), res.end());
 	for (int i = 0; i < res.size(); i++)
 	{
 		cout << res[i];
 		if (i != res.size() - 1)
-		{
 			cout << " ";
-		}
-	}*/
-	
+	}
 	return 0;
 }

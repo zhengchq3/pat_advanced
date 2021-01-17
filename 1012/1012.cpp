@@ -4,6 +4,73 @@ using namespace std;
 #include <algorithm>
 #include <map>
 
+
+//ÁøÉñ°æ±¾£º
+struct node
+{
+	int id, best;
+	int score[4], rank[4];
+} stu[2001];
+int exist[1000000] = { 0 },flag=-1;
+
+bool cmp(node n1, node n2)
+{
+	return n1.score[flag] > n2.score[flag];
+}
+int main()
+{
+	int n, m;
+	cin >> n >> m;
+	for (int i = 0; i < n; i++)
+	{
+		cin >> stu[i].id >> stu[i].score[1] >> stu[i].score[2] >> stu[i].score[3];
+		stu[i].score[0] = (stu[i].score[1] + stu[i].score[2] + stu[i].score[3]) * 1.0 / 3 + 0.5;
+	}
+	for (flag = 0; flag < 4; flag++)
+	{
+		sort(stu, stu + n, cmp);
+		for (int i = 0; i < n; i++)
+		{
+			stu[i].rank[flag] = i + 1;
+			if (i > 0 && stu[i].score[flag] == stu[i - 1].score[flag])
+			{
+				stu[i].rank[flag] = stu[i - 1].rank[flag];
+			}
+		}
+	}
+	for (int i = 0; i < n; i++)
+	{
+		stu[i].best = 0;
+		int minn = stu[i].rank[0];
+		for (int j = 1; j < 4; j++)
+		{
+			if (minn > stu[i].rank[j])
+			{
+				minn = stu[i].rank[j];
+				stu[i].best = j;
+			}
+				
+		}
+		exist[stu[i].id] = i + 1;
+	}
+	char c[4] = { 'A','C','M','E' };
+
+	for(int i = 0; i < m; i++)
+	{
+		int t;
+		cin >> t;
+		if (exist[t] == 0)
+		{
+			cout << "N/A" << endl;
+		}
+		else
+		{
+			cout << stu[exist[t] - 1].rank[stu[exist[t] - 1].best] << " " << c[stu[exist[t] - 1].best] << endl;
+		}
+	}
+	return 0;
+}
+/*
 class stu
 {
 public:
@@ -160,3 +227,4 @@ int main()
 	}
 	return 0;
 }
+*/
