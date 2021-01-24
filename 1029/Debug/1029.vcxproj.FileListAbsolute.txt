@@ -1,0 +1,2 @@
+C:\pat_advanced\1029\Debug\1029.exe
+C:\pat_advanced\1029\Debug\1029.pdb

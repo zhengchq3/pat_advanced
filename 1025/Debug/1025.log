@@ -1,0 +1,4 @@
+﻿  1025.cpp
+C:\pat_advanced\1025\1025.cpp(63,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1025\1025.cpp(70,20): warning C4018: “<”: 有符号/无符号不匹配
+  1025.vcxproj -> C:\pat_advanced\1025\Debug\1025.exe

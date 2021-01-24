@@ -1,0 +1,15 @@
+﻿  1022.cpp
+C:\pat_advanced\1022\1022.cpp(13,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(19,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(88,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(143,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(149,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(163,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(169,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(183,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(189,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(203,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(209,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(223,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1022\1022.cpp(229,22): warning C4018: “<”: 有符号/无符号不匹配
+  1022.vcxproj -> C:\pat_advanced\1022\Debug\1022.exe

@@ -1,0 +1,2 @@
+C:\pat_advanced\1025\Debug\1025.exe
+C:\pat_advanced\1025\Debug\1025.pdb
