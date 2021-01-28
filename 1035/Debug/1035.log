@@ -1,0 +1,6 @@
+﻿  1035.cpp
+C:\pat_advanced\1035\1035.cpp(13,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1035\1035.cpp(23,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1035\1035.cpp(39,9): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+C:\pat_advanced\1035\1035.cpp(72,21): warning C4018: “<”: 有符号/无符号不匹配
+  1035.vcxproj -> C:\pat_advanced\1035\Debug\1035.exe
