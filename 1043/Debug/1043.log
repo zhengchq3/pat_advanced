@@ -1,0 +1,6 @@
+﻿  1043.cpp
+C:\pat_advanced\1043\1043.cpp(12,20): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1043\1043.cpp(25,24): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1043\1043.cpp(54,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1043\1043.cpp(61,20): warning C4018: “<”: 有符号/无符号不匹配
+  1043.vcxproj -> C:\pat_advanced\1043\Debug\1043.exe

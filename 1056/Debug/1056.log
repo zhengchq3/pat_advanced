@@ -1,0 +1,7 @@
+﻿  1056.cpp
+C:\pat_advanced\1056\1056.cpp(22,15): warning C4018: “<=”: 有符号/无符号不匹配
+C:\pat_advanced\1056\1056.cpp(29,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1056\1056.cpp(41,13): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1056\1056.cpp(44,36): warning C4018: “<”: 有符号/无符号不匹配
+C:\pat_advanced\1056\1056.cpp(50,21): warning C4018: “<”: 有符号/无符号不匹配
+  1056.vcxproj -> C:\pat_advanced\1056\Debug\1056.exe
